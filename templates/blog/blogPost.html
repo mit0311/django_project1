@@ -1,0 +1,15 @@
+{% extends 'home/base.html' %}
+
+{% block title %}BlogPost{% endblock title %}
+
+{% block heading %}BlogPost page{% endblock heading %}
+
+{% block body %}
+  <div class="container my-3">
+      <h2 class="blog-post-title">{{post.title}} by {{post.author}}</h2>
+      <p class="blog-post-meta">{{post.timeStamp}}</p>
+      <p>{{post.content}}</p>
+  </div>
+
+
+{% endblock body %}
